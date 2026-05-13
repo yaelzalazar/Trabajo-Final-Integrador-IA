@@ -1,26 +1,39 @@
 # Frontend – Campus IA
 
+Sistema de gestión universitaria inteligente con asistente IA integrado.
+
 ## Descripción del proyecto
 
-El frontend de **Campus IA** es la interfaz de usuario del sistema de gestión universitaria inteligente. Permite a los usuarios interactuar con el backend a través de una experiencia simple e intuitiva.
+**Campus IA** es la interfaz de usuario del sistema de gestión universitaria inteligente. Proporciona una experiencia simple e intuitiva para que estudiantes y profesores interactúen con el backend a través de una API REST desarrollada en Spring Boot.
 
-El sistema ofrece:
+### Características principales
 
-- Autenticación de usuarios (Google y administrador)
-- Visualización de materias y estado académico
-- Consulta de pagos y alertas
-- Interacción mediante un chat inteligente
-- Comunicación entre alumno y profesor
-
-El frontend consume una API REST desarrollada en Spring Boot.
+- **Autenticación** - Login con Google e integración con administrador
+- **Gestión académica** - Visualización de materias y estado académico
+- **Gestión de pagos** - Consulta de pagos y alertas
+- **Chat inteligente** - Interacción mediante IA
+- **Panel de profesor** - Visualización de alumnos por materia
 
 ---
 
 ## Tecnologías utilizadas
 
-- React (o el framework que estés usando)
-- JavaScript / HTML / CSS
-- Consumo de API REST (fetch / axios)
+| Tecnología | Descripción |
+|-----------|------------|
+| **React** | Framework UI |
+| **Vite** | Build tool |
+| **JavaScript** | Lenguaje base |
+| **CSS** | Estilos |
+| **Fetch/Axios** | Consumo de API REST |
+| **Spring Boot** | Backend (API) |
+
+---
+
+## Requisitos previos
+
+- **Node.js** v16 o superior
+- **npm** v8 o superior
+- Acceso a la API REST del backend (Spring Boot)
 
 ---
 
@@ -31,53 +44,110 @@ El frontend consume una API REST desarrollada en Spring Boot.
 ```bash
 git clone <URL_DEL_REPOSITORIO>
 cd frontend
-2. Instalar dependencias
+```
+
+### 2. Instalar dependencias
+
+```bash
 npm install
-3. Configurar variables (si aplica)
+```
 
-Ejemplo:
+### 3. Configurar variables de entorno
 
+Crear archivo `.env` en la raíz del proyecto:
+
+```env
 VITE_API_URL=http://localhost:8080
-4. Ejecutar el proyecto
+```
+
+### 4. Ejecutar el servidor de desarrollo
+
+```bash
 npm run dev
-5. Acceder a la aplicación
+```
+
+### 5. Acceder a la aplicación
 
 Abrir en el navegador:
 
+```
 http://localhost:5173
-Funcionalidades principales
-Login de usuario
-Consulta de materias
-Visualización de estado académico
-Consulta de pagos
-Chat interactivo
-Panel de profesor (visualización de alumnos por materia)
-Uso de IA
+```
 
-La inteligencia artificial fue utilizada durante el desarrollo del frontend para mejorar la implementación y la toma de decisiones.
+---
 
-Generación de código
+## Estructura del proyecto
 
-Se utilizaron prompts para crear componentes y lógica de interfaz.
+```
+src/
+├── assets/          # Imágenes y recursos estáticos
+├── App.jsx          # Componente principal
+├── App.css          # Estilos globales
+├── main.jsx         # Punto de entrada
+└── index.css        # Estilos base
+```
 
-Ejemplo:
+---
 
-Crear un componente en React que consuma un endpoint REST y muestre una lista de materias con su estado.
-Resolución de errores
+## Uso de IA en el desarrollo
 
-La IA ayudó a resolver problemas como:
+Durante el desarrollo de este frontend se utilizó inteligencia artificial para:
 
-Manejo de estados en React
-Errores en llamadas a la API
-Problemas de renderizado
+### Generación de código
+- Creación de componentes React reutilizables
+- Lógica de consumo de endpoints REST
+- Manejo de estados con hooks
 
-Ejemplo:
+### Resolución de problemas
+- Debugging de errores en llamadas a API
+- Optimización de rendimiento
+- Solución de problemas de renderizado en React
 
-Tengo un error al consumir una API en React con fetch, ¿cómo manejo correctamente la respuesta y los errores?
-Decisiones técnicas
+### Decisiones técnicas
+- Definición de estructura del frontend
+- Patrones de organización de código
+- Mejores prácticas en consumo de APIs
 
-Se utilizaron prompts para definir la estructura del frontend.
+---
 
-Ejemplo:
+## Scripts disponibles
 
-¿Cómo organizar un frontend en React para consumir múltiples endpoints y manejar estado global?
+```bash
+npm run dev      # Ejecutar servidor de desarrollo
+npm run build    # Construir para producción
+npm run preview  # Previsualizar build
+```
+
+---
+
+## API Backend
+
+El frontend consume una API REST. Asegurate de que el backend esté corriendo en:
+```
+http://localhost:8080
+```
+
+Para más información sobre los endpoints, consulta la documentación del backend.
+
+---
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+---
+
+## Licencia
+
+Este proyecto está bajo licencia MIT.
+
+---
+
+## Contacto
+
+Para preguntas o sugerencias, por favor abre un issue o contacta al equipo de desarrollo.
