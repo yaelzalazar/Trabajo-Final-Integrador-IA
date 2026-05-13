@@ -181,3 +181,73 @@ Resultado:
 Mejor organización del código
 Separación clara de responsabilidades
 Mayor mantenibilidad del sistema
+
+3. Post-desarrollo (Soporte y métricas)
+Sistema de gestión de tickets
+
+Se diseñó un sistema básico de gestión de tickets para simular la etapa posterior al lanzamiento del producto.
+
+Los tickets permiten registrar incidencias y solicitudes relacionadas al sistema, clasificadas en:
+
+Bug: errores del sistema
+Mejora: nuevas funcionalidades o mejoras
+Consulta: dudas de los usuarios
+
+Cada ticket incluye:
+
+Tipo
+Descripción
+Prioridad (Alta, Media, Baja)
+Estado (Abierto, En progreso, Resuelto)
+Tickets simulados
+
+A continuación se presentan ejemplos de tickets generados:
+
+ID	Tipo	Descripción	Prioridad	Estado
+1	Bug	Error al registrar pago de una cuota	Alta	Abierto
+2	Mejora	Agregar notificaciones automáticas al sistema	Media	En progreso
+3	Consulta	Usuario no visualiza sus materias correctamente	Baja	Resuelto
+4	Bug	El chat no responde correctamente a ciertas preguntas	Alta	Resuelto
+5	Mejora	Integración futura con sistema de pagos real	Media	Pendiente
+Métricas de seguimiento
+
+Se definieron métricas básicas para analizar el comportamiento del sistema y su evolución.
+
+1. Cantidad de errores
+
+Permite medir la estabilidad del sistema.
+
+Total de bugs detectados: 2
+Bugs críticos (alta prioridad): 2
+2. Tiempo de resolución
+
+Permite evaluar la eficiencia en la resolución de problemas.
+
+Ejemplo:
+
+Ticket 3: Resuelto en corto plazo
+Ticket 4: Requiere análisis → resolución media
+3. Uso del sistema (opcional)
+
+Permite analizar la interacción de los usuarios con el sistema.
+
+Ejemplo:
+
+Consultas al chat
+Uso de endpoints académicos
+Acceso a información de pagos
+Uso de IA en post-desarrollo
+
+La inteligencia artificial fue utilizada para analizar los tickets y obtener conclusiones sobre el sistema.
+
+Prompt utilizado
+Analizá estos tickets de soporte y decime cuáles son los problemas más frecuentes y qué mejoras debería priorizar.
+Resultado del uso de IA
+
+A partir del análisis se identificó que:
+
+Los problemas más críticos están relacionados con pagos y funcionamiento del chat
+Las mejoras más importantes incluyen:
+Notificaciones automáticas
+Integración con sistemas de pago reales
+Es necesario mejorar la robustez del sistema en validaciones y respuestas del chat
