@@ -1,0 +1,8 @@
+com\universidad\backend\controller\MateriaController.class
+com\universidad\backend\controller\MensajeController.class
+com\universidad\backend\model\Mensaje.class
+com\universidad\backend\controller\PagoController.class
+com\universidad\backend\repository\MensajeRepository.class
+com\universidad\backend\service\MateriaService.class
+com\universidad\backend\dto\AlumnoResumenDTO.class
+com\universidad\backend\controller\ChatCampusController.class
