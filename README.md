@@ -63,3 +63,121 @@ Organizar el proyecto en módulos
 Diseñar endpoints REST
 Integrar funcionalidades clave como chat, pagos y alertas
 Tomar decisiones técnicas durante el desarrollo
+
+2. Desarrollo (Construcción del producto)
+Backend implementado
+
+Se desarrolló un backend funcional utilizando Java con Spring Boot, siguiendo una arquitectura en capas:
+
+Controller: manejo de requests
+Service: lógica de negocio
+Repository: acceso a datos
+API REST
+
+Se implementaron múltiples endpoints REST para cubrir las funcionalidades del sistema.
+
+Autenticación
+POST /auth/google
+POST /auth/admin
+
+Permiten el ingreso de usuarios:
+
+Alumnos mediante Google
+Profesores mediante credenciales
+Gestión académica
+GET /carreras
+GET /carreras/{id}/materias
+GET /materias/{id}/alumnos
+GET /alumnos/{id}/materias
+
+Permiten consultar:
+
+Carreras disponibles
+Materias por carrera
+Alumnos inscriptos en una materia
+Materias asociadas a un alumno
+Chat
+POST /chat
+POST /chat-campus
+
+Permiten procesar consultas del usuario e interpretar preguntas en lenguaje natural.
+
+Pagos
+POST /alumnos/pagar/{id}
+
+Permite simular el pago de una cuota.
+
+Mensajería
+POST /mensajes/enviar
+GET /mensajes/{alumnoId}
+
+Permite enviar mensajes y consultar el historial entre alumno y profesor.
+
+Manejo de datos
+
+Se utilizó PostgreSQL como base de datos relacional.
+
+Tablas principales:
+
+alumnos
+carreras
+materias
+inscripciones
+pagos
+mensajes
+
+El sistema maneja información persistente como:
+
+Estado académico del alumno
+Inscripciones a materias
+Historial de pagos
+Conversaciones entre usuarios
+Frontend (opcional)
+
+Se desarrolló una interfaz básica (en proceso) para consumir la API.
+
+Funcionalidades previstas:
+
+Login de usuario
+Visualización de materias
+Consulta de pagos
+Interacción con el chat
+Uso de IA
+
+La inteligencia artificial fue utilizada durante el desarrollo en distintas etapas.
+
+Generación de código
+
+Se utilizaron prompts para generar estructuras iniciales de código.
+
+Ejemplo:
+
+Crea un endpoint en Spring Boot para obtener las materias de un alumno desde una base de datos.
+
+Esto permitió acelerar la creación de controladores, servicios y repositorios.
+
+Resolución de errores
+
+La IA fue utilizada para identificar y resolver errores como:
+
+Problemas con valores null en base de datos
+Errores de Hibernate
+Problemas en la construcción de URLs
+Lógica incorrecta en controladores
+
+Ejemplo:
+
+Tengo un error de constraint en PostgreSQL por un campo null en DNI. ¿Cómo lo soluciono?
+Decisiones técnicas
+
+Se utilizaron prompts para tomar decisiones sobre arquitectura y diseño.
+
+Ejemplo:
+
+¿Cómo estructurar un proyecto Spring Boot separando Controller, Service y Repository?
+
+Resultado:
+
+Mejor organización del código
+Separación clara de responsabilidades
+Mayor mantenibilidad del sistema
